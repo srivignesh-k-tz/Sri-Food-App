@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:padding="18dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/backss"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:foreground="?attr/selectableItemBackground"
+                android:contextClickable="true"
+                android:src="@drawable/back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="24dp">
+
+            <com.example.kupa.CircularImageView
+                android:id="@+id/image_view"
+                android:background="@drawable/profilechange"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_gravity="center_vertical"
+                android:scaleType="centerCrop"
+                tools:ignore="MissingClass" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:background="@drawable/bgcolour"
+            android:layout_marginTop="30dp"
+            android:paddingHorizontal="12dp">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="20dp"
+                android:src="@drawable/pro" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="Username"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:inputType="textPersonName"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:paddingHorizontal="12dp"
+            android:background="@drawable/bgcolour"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="18dp"
+                android:src="@drawable/email"/>
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="E-mail"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bgcolour"
+            android:layout_marginTop="25dp"
+            android:paddingHorizontal="12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="18dp"
+                android:src="@drawable/te"/>
+            <EditText
+                android:id="@+id/ph"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Phone Number"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:maxLength="10"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bgcolour"
+            android:layout_marginTop="25dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:paddingHorizontal="12dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="18dp"
+                android:src="@drawable/pass"/>
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="Password"
+                android:layout_marginLeft="1dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:inputType="textPassword"
+                android:singleLine="true"
+                android:imeOptions="actionDone"
+                android:textColor="@color/black"
+                android:maxLength="8"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageViewTogglePassword"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/hide"
+                android:contentDescription="Toggle Password Visibility" />
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/namesave"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Save"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/white"
+            android:foreground="?attr/selectableItemBackground"
+            android:contextClickable="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:background="@drawable/bg" />
+
+    </LinearLayout>
+</LinearLayout>

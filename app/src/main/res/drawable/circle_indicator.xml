@@ -1,0 +1,9 @@
+<!-- res/drawable/circle_indicator.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="false">
+        <shape android:shape="oval">
+            <solid android:color="@color/inactive_color" />
+            <size android:width="8dp" android:height="8dp" />
+        </shape>
+    </item>
+</selector>
