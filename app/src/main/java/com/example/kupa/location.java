@@ -61,7 +61,9 @@
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(location.this, New.class);
+                    intent.putExtra("openFragment", "profile");
                     startActivity(intent);
+                    finish();
                 }
             });
 
@@ -159,7 +161,14 @@
             super.onLowMemory();
             mapView.onLowMemory();
         }
-
+        @Override
+        public void onBackPressed() {
+            Intent intent = new Intent(location.this, New.class);
+            intent.putExtra("openFragment", "profile");
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);
+            startActivity(intent);
+            finish();
+        }
         @Override
         public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
             super.onRequestPermissionsResult(requestCode, permissions, grantResults);

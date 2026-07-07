@@ -41,12 +41,25 @@ public class New extends AppCompatActivity {
                     selectedFragment = new ProfileFragment();
                 }
                 if (selectedFragment != null) {
-                    getSupportFragmentManager().beginTransaction().replace(R.id.frame_layout, selectedFragment).commit();
+                    getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
                 }
                 return true;
             }
         });
-        bottomNavigationView.setSelectedItemId(R.id.navigation_home);
+        String fragment = getIntent().getStringExtra("openFragment");
+
+        if (fragment != null && fragment.equals("profile")) {
+
+            getSupportFragmentManager()
+                    .beginTransaction()
+                    .replace(R.id.fragment_container, new ProfileFragment())
+                    .commit();
+        }
+        else {
+            bottomNavigationView.setSelectedItemId(R.id.navigation_home);
+
+        }
+
 
 //        ImageView pizza = findViewById(R.id.pizza);
 //        pizza.setOnClickListener(new View.OnClickListener() {
@@ -65,5 +78,11 @@ public class New extends AppCompatActivity {
 //                startActivity(intent);
 //            }
 //        });
+    }
+    private void loadFragment(Fragment fragment) {
+        getSupportFragmentManager()
+                .beginTransaction()
+                .replace(R.id.fragment_container, fragment)
+                .commit();
     }
 }

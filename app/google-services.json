@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "390046048052",
+    "project_id": "sri-s-app",
+    "storage_bucket": "sri-s-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390046048052:android:75d137bad6c00970f24f61",
+        "android_client_info": {
+          "package_name": "com.example.kupa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFeC0vQ5zLTvud6myN94GZAzOtkL-7dGk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

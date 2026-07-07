@@ -62,9 +62,12 @@ public class EditAddress extends BottomSheetDialogFragment {
                     editor.putString("pincode", editPincode.getText().toString());
                     editor.apply();
 
+                    Intent intent =
+                            new Intent(getActivity(), location.class);
 
-                    Intent intent = new Intent(getActivity(), New.class);
                     startActivity(intent);
+
+                    dismiss(); // close bottom sheet
 
                     Toast.makeText(getContext(), "Address Saved", Toast.LENGTH_SHORT).show();
                 }

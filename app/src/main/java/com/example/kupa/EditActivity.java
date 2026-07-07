@@ -48,7 +48,9 @@ public class EditActivity extends AppCompatActivity {
         back = findViewById(R.id.backss);
         back.setOnClickListener(v -> {
             Intent intent = new Intent(EditActivity.this, New.class);
+            intent.putExtra("openFragment", "profile");
             startActivity(intent);
+            finish();
         });
 
         name = findViewById(R.id.name);
@@ -78,10 +80,10 @@ public class EditActivity extends AppCompatActivity {
                     editor.putString("imageUri", selectedImageUri.toString());
                 }
                 editor.apply();
-
                 Intent intent = new Intent(EditActivity.this, New.class);
+                intent.putExtra("openFragment", "profile");
                 startActivity(intent);
-
+                finish();
                 Toast.makeText(EditActivity.this, "Saved", Toast.LENGTH_SHORT).show();
             }
         });

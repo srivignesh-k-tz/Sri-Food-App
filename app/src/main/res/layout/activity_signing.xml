@@ -63,7 +63,37 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Name"
+                android:textStyle="bold"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="0dp"
+                android:backgroundTint="#fafafa">
+
+                <EditText
+                    android:id="@+id/edit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Your Name"
+                    android:padding="12dp"
+                    android:textSize="14dp"
+                    android:layout_marginLeft="10dp"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:inputType="none"
+                    android:background="@android:color/transparent"
+                    />
+
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Email"
+                android:layout_marginTop="20dp"
                 android:textStyle="bold"/>
 
             <androidx.cardview.widget.CardView
@@ -89,6 +119,7 @@
                     />
 
             </androidx.cardview.widget.CardView>
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -132,6 +163,8 @@
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:src="@drawable/hide"
+                        android:clickable="true"
+                        android:focusable="true"
                         android:layout_gravity="end"
                         android:contentDescription="Toggle Password Visibility" />
                 </LinearLayout>

@@ -40,25 +40,25 @@
             android:name=".New"
             android:exported="false" />
         <activity
-            android:name=".seven"
+            android:name=".get_start"
             android:exported="false" />
         <activity
-            android:name=".twelveth"
+            android:name=".reset_password"
             android:exported="false" />
         <activity
-            android:name=".eleventh"
+            android:name=".otp_phone_number"
             android:exported="false" />
         <activity
-            android:name=".sixth"
+            android:name=".forget_password"
             android:exported="false" />
         <activity
-            android:name=".fifth"
+            android:name=".otp_email"
             android:exported="false" />
         <activity
-            android:name=".fourth"
+            android:name=".signup"
             android:exported="false" />
         <activity
-            android:name=".third"
+            android:name=".signing"
             android:exported="false" />
         <activity
             android:name=".second"

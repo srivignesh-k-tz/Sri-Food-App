@@ -24,7 +24,7 @@ public class second extends AppCompatActivity {
         getstarted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(second.this, fourth.class);
+                Intent intent=new Intent(second.this, signup.class);
                 startActivity(intent);
             }
         });
@@ -32,7 +32,7 @@ public class second extends AppCompatActivity {
         signin2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(second.this, third.class);
+                Intent intent=new Intent(second.this, signing.class);
                 startActivity(intent);
             }
         });

@@ -71,7 +71,7 @@
             android:id="@+id/edit_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sri Vignesh.K"
+            android:text=""
             android:textStyle="bold"
             android:textSize="18dp"
             android:layout_weight="1"
@@ -104,6 +104,7 @@
 
         </LinearLayout>
         </LinearLayout>
+
 
     </LinearLayout>
         <RelativeLayout
@@ -337,6 +338,12 @@
                     android:textColor="#FF3D00"/>
 
         </RelativeLayout>
+<!--        <TextView-->
+<!--            android:id="@+id/edit_phone"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Phone"-->
+<!--            android:textSize="16sp"/>-->
 
 </LinearLayout>
 </LinearLayout>
