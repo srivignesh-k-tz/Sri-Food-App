@@ -56,6 +56,7 @@
                 android:src="@drawable/search"/>
 
             <EditText
+                android:id="@+id/search_home"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:hint="Search on Kupa"
@@ -266,6 +267,7 @@
                 android:orientation="horizontal">
 
                 <LinearLayout
+                    android:id="@+id/home_pizza_container"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical">
@@ -304,6 +306,7 @@
 
                 </LinearLayout>
                 <LinearLayout
+                    android:id="@+id/home_burger_container"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="16dp"
@@ -344,6 +347,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/home_french_container"
                     android:layout_width="match_parent"
                     android:layout_marginLeft="16dp"
                     android:layout_height="match_parent"
@@ -384,6 +388,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/home_sandwich_container"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginLeft="16dp"
